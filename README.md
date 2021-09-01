@@ -2,13 +2,13 @@
 this is my implementation of a basic spinner that replicates the look and feel of the wetransfer spinner. I implemented it in vanilla JS
 
 ## How to use
-The widget is relatively easy to put onto any page. Just import the css and js
-<script src="spinner.js" ></script>
-<link rel="stylesheet" href="spinner.css">
+The widget is relatively easy to put onto any page. Just import the css and js  
+```<script src="spinner.js" ></script>```
+```<link rel="stylesheet" href="spinner.css">```
 
 from there you can call the constructor using the element ID that you want to add the widget to
 
-new Spinner("spinner-widget");
+```new Spinner("spinner-widget");```
 
 ***Optional Params***:  
 constructor(spinnerId, showButtons = true, showPercent = true, startButtonName = "Begin Download", endButtonName = "Cancel", spinTime = 10000)
