@@ -28,6 +28,8 @@ endButtonName: the name for the start button.
 spinTime: amount of time it should take for % to reach 100%. Unit is ms  
     Default: 10000
 
+***Other methods***:
+endLoad(): destructor for the widget. will remove the dom elements so that the widget no longer exists on screen
 
 ## Where you can play with it
 Download the source code, double click reusable-spinner.html  
@@ -42,5 +44,7 @@ Allow for unlimited spinning. This would make this more useful as a page spinner
 Allow for an external source to define the % value in the spinner dynamically. A fixed time and % isnt super useful, but fine for a first implementation.
 
 Dynamic sizing. Currently the spinner has a single size. It would be useful to allow the spinner to automatically adjust it's size based on either passed parameters or auto sizing based on the container
+
+make some methods private so that they cannot be called externally
 
 Add Testing! I was told to not take too much time on this project so i did skimp out on testing. Sorry!
