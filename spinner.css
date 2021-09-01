@@ -44,6 +44,7 @@
 	left: 50%;
 	position: absolute;
 	transform: translateX(-50%);
+	cursor:  pointer;
 }
 
 .spinner-button.hide {
