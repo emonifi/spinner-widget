@@ -48,3 +48,5 @@ Dynamic sizing. Currently the spinner has a single size. It would be useful to a
 make some methods private so that they cannot be called externally
 
 Add Testing! I was told to not take too much time on this project so i did skimp out on testing. Sorry!
+
+make it more apparant that it has completed when the % is hidden
