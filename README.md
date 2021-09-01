@@ -8,7 +8,7 @@ The widget is relatively easy to put onto any page. Just import the css and js
 
 from there you can call the constructor using the element ID that you want to add the widget to
 
-let spinToWin = new Spinner("spinner-widget");
+new Spinner("spinner-widget");
 
 Optional Params:
 constructor(spinnerId, showButtons = true, showPercent = true, startButtonName = "Begin Download", endButtonName = "Cancel", spinTime = 10000)
@@ -26,6 +26,8 @@ spinTime: amount of time it should take for % to reach 100%. Unit is ms
 
 
 ## Where you can play with it
+Download the source code, double click reusable-spinner.html
+You can modify the constructor in the html file if you would like to change the behavior
 
 
 ## Areas for improvement
