@@ -44,8 +44,7 @@ class Spinner {
 			this.startSpinner();
 		}
 
-		if (this.showPercent)
-			this.createPercent();
+		this.createPercent();
 	}
 
 	//allows for destruction of widget, if loading is complete
@@ -58,10 +57,12 @@ class Spinner {
 	}
 
 	createPercent() {
-		this.percent = document.createElement("div");
-		this.percent.classList.add("spinner-percent");
-		this.percent.textContent = "0%";
-		this.spinnerContainer.appendChild(this.percent);
+		if (this.showPercent) {
+			this.percent = document.createElement("div");
+			this.percent.classList.add("spinner-percent");
+			this.percent.textContent = "0%";
+			this.spinnerContainer.appendChild(this.percent);
+		}
 	}
 
 	updatePercent() {
@@ -125,6 +126,9 @@ class Spinner {
 			this.endButton.classList.add("hide");
 			this.startButton.classList.remove("hide");
 		}
+
+		if (this.showPercent)
+			this.percent.textContent = "0%";
 
 		this.spinningCircle.classList.remove("spinning-dash");
 
