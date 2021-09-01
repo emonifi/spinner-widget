@@ -32,7 +32,7 @@ spinTime: amount of time it should take for % to reach 100%. Unit is ms
 endLoad(): destructor for the widget. will remove the dom elements so that the widget no longer exists on screen
 
 ## Where you can play with it
-Download the source code, double click reusable-spinner.html  
+Download the source code, double click index.html  
 You can modify the call to the class constructor in the html file if you would like to change the behavior
 
 If you want an easy one click way to view it: https://emonifi.github.io/spinner-widget/
