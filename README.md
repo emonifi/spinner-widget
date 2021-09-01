@@ -33,6 +33,8 @@ spinTime: amount of time it should take for % to reach 100%. Unit is ms
 Download the source code, double click reusable-spinner.html  
 You can modify the call to the class constructor in the html file if you would like to change the behavior
 
+If you want an easy one click way to view it: https://emonifi.github.io/spinner-widget/
+
 
 ## Areas for improvement
 Allow for unlimited spinning. This would make this more useful as a page spinner. You could get it to spin indefinitely until you are ready and call the endLoad() method
