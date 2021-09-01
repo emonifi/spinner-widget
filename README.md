@@ -2,13 +2,13 @@
 this is my implementation of a basic spinner that replicates the look and feel of the wetransfer spinner. I implemented it in vanilla JS
 
 ## How to use
-The widget is relatively easy to put onto any page. Just import the css and js
-<script src="spinner.js" ></script>
-<link rel="stylesheet" href="spinner.css">
+The widget is relatively easy to put onto any page. Just import the css and js  
+```<script src="spinner.js" ></script>```
+```<link rel="stylesheet" href="spinner.css">```
 
 from there you can call the constructor using the element ID that you want to add the widget to
 
-new Spinner("spinner-widget");
+```new Spinner("spinner-widget");```
 
 ***Optional Params***:  
 constructor(spinnerId, showButtons = true, showPercent = true, startButtonName = "Begin Download", endButtonName = "Cancel", spinTime = 10000)
@@ -28,9 +28,11 @@ endButtonName: the name for the start button.
 spinTime: amount of time it should take for % to reach 100%. Unit is ms  
     Default: 10000
 
+***Other methods***:
+endLoad(): destructor for the widget. will remove the dom elements so that the widget no longer exists on screen
 
 ## Where you can play with it
-Download the source code, double click reusable-spinner.html  
+Download the source code, double click index.html  
 You can modify the call to the class constructor in the html file if you would like to change the behavior
 
 If you want an easy one click way to view it: https://emonifi.github.io/spinner-widget/
@@ -43,4 +45,8 @@ Allow for an external source to define the % value in the spinner dynamically. A
 
 Dynamic sizing. Currently the spinner has a single size. It would be useful to allow the spinner to automatically adjust it's size based on either passed parameters or auto sizing based on the container
 
+make some methods private so that they cannot be called externally
+
 Add Testing! I was told to not take too much time on this project so i did skimp out on testing. Sorry!
+
+make it more apparant that it has completed when the % is hidden
