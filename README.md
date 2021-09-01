@@ -26,7 +26,7 @@ spinTime: amount of time it should take for % to reach 100%. Unit is ms
 
 
 ## Where you can play with it
-Download the source code, double click reusable-spinner.html
+Download the source code, double click reusable-spinner.html  
 You can modify the constructor in the html file if you would like to change the behavior
 
 
