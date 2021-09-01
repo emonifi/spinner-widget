@@ -111,7 +111,7 @@ class Spinner {
 		this.spinnerWidget.appendChild(this.endButton);
 	}
 
-	startSpinner = () => {
+	startSpinner = () => { //ensure this is binded to class for onclick
 		if (this.showButtons) {
 			this.startButton.classList.add("hide");
 			this.endButton.classList.remove("hide");
@@ -121,7 +121,7 @@ class Spinner {
 		this.percentInterval = setInterval(this.updatePercent.bind(this), 10);
 	}
 
-	endSpinner = () => {
+	endSpinner = () => { //ensure this is binded to class for onclick
 		if (this.showButtons) {
 			this.endButton.classList.add("hide");
 			this.startButton.classList.remove("hide");
