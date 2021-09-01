@@ -1,0 +1,59 @@
+.spinner-container {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+
+.spinner-static-circle {
+	fill: transparent;
+	stroke: #EBEBEB;
+	stroke-width: 5px;
+}
+
+.spinner-blue-dash {
+	fill: transparent;
+	stroke: #41A0FF;
+	stroke-width: 5px;
+	stroke-linecap: round;
+	stroke-dasharray: 70 200;
+	transform-origin: 50% 50%;
+}
+
+.spinning-dash {
+	animation: spinning 3s linear infinite;
+}
+
+@keyframes spinning {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner-button {
+	background: transparent;
+	color: #41A0FF;
+	border: 1px solid #41A0FF;
+	border-radius: 1.25em;
+	font-weight:  500;
+	height:  2.5em;
+	width: 10em;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.spinner-button.hide {
+	display: none;
+}
+
+.spinner-percent {
+	font-size: 3em;
+	position:  absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
