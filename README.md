@@ -36,3 +36,5 @@ Allow for unlimited spinning. This would make this more useful as a page spinner
 Allow for an external source to define the % value in the spinner dynamically. A fixed time and % isnt super useful, but fine for a first implementation.
 
 Dynamic sizing. Currently the spinner has a single size. It would be useful to allow the spinner to automatically adjust it's size based on either passed parameters or auto sizing based on the container
+
+Add Testing! I was told to not take too much time on this project so i did skimp out on testing. Sorry!
